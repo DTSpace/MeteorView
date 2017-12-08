@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.hoanganhtuan95ptit.library.MeteorView;
@@ -16,6 +17,7 @@ import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,6 +39,12 @@ public class MainActivity extends AppCompatActivity {
     ImageView imgBackgroundFire;
     @BindView(R.id.button)
     FrameLayout button;
+    @BindView(R.id.tvStartChat)
+    TextView tvStartChat;
+    @BindView(R.id.img_loading)
+    ImageView imgLoading;
+    @BindView(R.id.loading)
+    LinearLayout loading;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,5 +103,16 @@ public class MainActivity extends AppCompatActivity {
                     public void onAnimationRepeat(Animator animation) {
                     }
                 }).start();
+    }
+
+    @OnClick(R.id.button)
+    public void onViewClicked() {
+        if(loading.getVisibility()==View.VISIBLE)return;
+
+        AnimationDrawable frameAnimation = (AnimationDrawable) imgLoading.getDrawable();
+        frameAnimation.start();
+
+        loading.setVisibility(View.VISIBLE);
+        tvStartChat.setVisibility(View.GONE);
     }
 }
