@@ -4,18 +4,7 @@ android library MeteorView
 
 # Demo
 
-[<img src="/store/output1.gif">](https://play.google.com/store/apps/details?id=com.hoanganhtuan01101995.sola_date)
-
-# Project
-
-
-Icon | Name | Link Google Play
------------- | ------------ | -------------
-[<img src="/store/ic_launcher.png">](https://play.google.com/store/apps/details?id=com.hoanganhtuan01101995.sola_date) | [Sola - Stranger chat, Anonymous chat & Date](https://play.google.com/store/apps/details?id=com.hoanganhtuan01101995.sola_date) | [<img src="/store/Store.png">](https://play.google.com/store/apps/details?id=com.hoanganhtuan01101995.sola_date)
-
-
-
-
+<img src="/store/output1.gif">
 
 # Download
 
